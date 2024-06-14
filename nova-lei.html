@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Leis - CONSTRUTECH</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CONSTRUTECH</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="leis.html" class="active">Leis e Normas</a></li>
+                    <li><a href="materiais.html">Materiais de Construção</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="leis-normas">
+            <h2>Cadastro de Leis e Normas Construtivas</h2>
+            <section id="cadastro">
+                <form id="form-cadastro" action="#" method="post">
+                    <label for="nome">Nome da lei/Norma:</label>
+                    <input type="text" id="nome-norma" name="nome-norma" required>
+    
+                    <label for="desc-norma">Descrição:</label>
+                    <textarea id="desc-norma" name="desc-norma" required style="resize: none; height: 150px;" ></textarea>
+                    
+                    <br><br>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CONSTRUTECH. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="nova-lei.js"></script>
+</body>
+</html>
